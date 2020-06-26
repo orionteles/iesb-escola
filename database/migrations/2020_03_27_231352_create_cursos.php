@@ -17,6 +17,7 @@ class CreateCursos extends Migration
             $table->bigIncrements('id');
             $table->string('nome', 100);
             $table->integer('duracao')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
